@@ -1,0 +1,189 @@
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:#EDEDEE;
+}
+
+.calc-container-night{
+    background: #21252c;
+    height: 60%;
+    width: 20%;
+    min-height: 600px;
+    min-width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.calc-container-day{
+    background: #FFFFFF;
+    height: 60%;
+    width: 20%;
+    min-height: 600px;
+    min-width: 300px;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid black;
+}
+
+.display{
+    height: 40%;
+}
+
+.toggle-theme-button-container{
+    display: flex;
+    justify-content: center;
+    margin-top:16px ;
+    border-radius: 16px;
+}
+.toggle-theme-button{
+    font-size: 20px;
+    max-height:20px;
+}
+
+#day-theme-button{
+    background: #292e36;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding:16px 8px 16px 16px;
+}
+
+#night-theme-button{
+    background: #292e36;
+    padding:16px 0px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-right: 16px;
+    padding-left: 8px;
+    color:white;
+}
+
+#day-theme-button:hover{
+    font-size: 24px;
+    color: lightblue;
+}
+
+#night-theme-button:hover{
+    font-size: 24px;
+    color: lightblue;
+}
+
+ .display-label-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 78%;
+    margin-right: 16px;
+}
+
+.keypad-container-night{
+    height: 60%;
+    background: #292e36;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keypad-container-day{
+    height: 60%;
+    background: #F9F9F9;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.keypad{
+    height: 90%;
+    width: 90%;
+    overflow: hidden;
+}
+
+.result-night{
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+}
+.result-day{
+    font-size: 32px;
+    color:black;
+    font-weight: 600;
+}
+
+
+.operand1-night,.operand2-night{
+    font-size: 24px;
+    color: white;
+    font-weight: 300;
+}
+
+.operand1-day,.operand2-day{
+    font-size: 24px;
+    color:black;
+    font-weight: 300;
+}
+.operator{
+    color:#E37374;
+    margin-left: 8px;
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.keypad-table-night{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border:16px solid #292e36;
+    margin-bottom: 8px;
+    border-collapse: collapse;
+}
+
+.keypad-table-day{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border:16px solid #F9F9F9;
+    margin-bottom: 8px;
+    border-collapse: collapse;
+}
+
+td{
+    width:32px;
+    height: 16px;
+    max-width: 32px;
+    max-height: 16px;
+    font-size: 20px;
+    color: white;
+    border:8px solid #292e36;
+    background: #21252c;
+    border-radius: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+td:hover{
+    transform: scale(1.2);
+}
+
+.first-row td{
+    color:#26D3B5;
+}
+
+#div{
+    color:#E37374;
+}
+
+.last-column{
+    color:#E37374;
+}
+
+#result-display{
+    min-height: 40px;
+}
+
+

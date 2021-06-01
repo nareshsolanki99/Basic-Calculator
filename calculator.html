@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calc.css" />
+    <script
+      src="https://kit.fontawesome.com/974836d0d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="calc-container-night" id="calc-container">
+      <div class="display">
+        <div class="toggle-theme-button-container">
+          <i class="fas fa-sun toggle-theme-button-night" id="day-theme-button" onclick="changeThemeDay()"></i>
+          <i
+            class="far fa-moon toggle-theme-button-night" id="night-theme-button" onclick="changeThemeNight()"></i>
+        </div>
+        <div class="display-label-container">
+            <div id="operator-display">
+                <label class="operand1-night" id="operand1"></label><label id="operator" class="operator"></label><label class="operand2-night" id="operand2"></label>
+            </div>
+            <div id="result-display">
+                <label class="result-night" id="result"></label>
+            </div>
+        </div>
+      </div>
+      <div class="keypad-container-night" id="keypad-container">
+        <div class="keypad">
+        <table class="keypad-table-night" id="keypad-table">
+          <tr class="first-row">
+            <td id="AC" onclick="reset()">AC</td>
+            <td id="+-" value="prefix">+/-</td>
+            <td id="%" onclick="operation('%')">%</td>
+            <td class="last-column" id="div" onclick="operation('/')">/</td>
+          </tr>
+          <tr class="second-row">
+            <td class="tds" onclick="num(7)">7</td>
+            <td class="tds" onclick="num(8)">8</td>
+            <td class="tds" onclick="num(9)">9</td>
+            <td class="last-column" onclick="operation('x')">x</td>
+          </tr>
+          <tr class="third-row">
+            <td class="tds" onclick="num(4)">4</td>
+            <td class="tds" onclick="num(5)">5</td>
+            <td class="tds" onclick="num(6)">6</td>
+            <td class="last-column" onclick="operation('-')">-</td>
+        </tr>
+        <tr class="fourth-row">
+            <td class="tds" onclick="num(1)">1</td>
+            <td class="tds" onclick="num(2)">2</td>
+            <td class="tds" onclick="num(3)">3</td>
+            <td class="last-column" onclick="operation('+')">+</td>
+        </tr>
+        <tr class="fifth-row">
+            <td class="tds" onclick="clearAll()">C</td>
+            <td class="tds" onclick="num(0)">0</td>
+            <td class="tds" onclick="num('.')">.</td>
+            <td class="last-column" onclick="calculate()">=</td>
+        </tr>
+        </table>
+        </div>
+      </div>
+    </div>
+    <script src="calc.js"></script>
+  </body>
+</html>
